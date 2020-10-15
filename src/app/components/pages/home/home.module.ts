@@ -5,7 +5,8 @@ import { HomeComponent } from './home.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import {LayoutModule} from '../../shared/layout/layout.module';
-
+import { NgZorroAntdModule } from 'ng-zorro-antd';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import {LayoutModule} from '../../shared/layout/layout.module';
     CommonModule,
     FormsModule,
     HomePageRoutingModule,
-    LayoutModule
+    LayoutModule,
+    NgZorroAntdModule,
 
   ],
   declarations: [HomeComponent],

@@ -12,13 +12,16 @@ const routes: Routes = [
         path: '',
         loadChildren: () => import('./components/pages/home/home.module').then(m => m.HomePageModule),
         },
-    ]
+      {
+        path: 'product',
+        loadChildren: () => import('./components/pages/home/product/product.module').then(m => m.ProductModule),
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('./components/pages/home/contact/contact.module').then(m => m.ContactModule),
+      },
+    ],
   },
-  // {
-  // path: '**',
-  // component: NotFoundComponent,
-  //   pathMatch: 'full'
-  // },
 ];
 
 @NgModule({

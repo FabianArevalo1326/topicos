@@ -7,6 +7,7 @@ import {CommonModule, registerLocaleData} from '@angular/common';
 import en from '@angular/common/locales/en';
 import {FooterComponent} from './footer/footer.component';
 import {HeaderComponent} from './modal/header/header.component';
+import {NgZorroAntdModule} from 'ng-zorro-antd';
 
 
 registerLocaleData(en);
@@ -26,6 +27,7 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     RouterModule,
+    NgZorroAntdModule,
   ],
   providers: [],
 })
