@@ -16,6 +16,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { ProductComponent } from './components/pages/home/product/product.component';
 
 
+
 registerLocaleData(en);
 
 @NgModule({

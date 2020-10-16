@@ -7,6 +7,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import {LayoutModule} from '../../shared/layout/layout.module';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { ContactComponent } from './contact/contact.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
