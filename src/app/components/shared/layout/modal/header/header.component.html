@@ -1,0 +1,18 @@
+<nz-header>
+  <div class="logo"[ngStyle]="{'background-image': 'url(assets/img/logo1.jpg)'}"></div>
+  <ul nz-menu nzTheme="light" nzMode="horizontal" style="height: 500px;">
+
+    <li nz-menu-item><a [routerLink]="['']" routerLinkActive="active-link">
+      Inicio
+    </a></li>
+    <li nz-menu-item><a [routerLink]="['/product']" routerLinkActive="active-link">
+      Productos
+    </a></li>
+    <li nz-menu-item><a [routerLink]="['/profile']" routerLinkActive="active-link">
+      Tipo De Producto
+    </a></li>
+    <li nz-menu-item><a [routerLink]="['/contact']" routerLinkActive="active-link">
+      Contacto
+    </a></li>
+  </ul>
+</nz-header>
