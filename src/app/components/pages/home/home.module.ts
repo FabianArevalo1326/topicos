@@ -8,6 +8,7 @@ import {LayoutModule} from '../../shared/layout/layout.module';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
+import { DetailComponent } from './detail/detail.component';
 
 
 @NgModule({

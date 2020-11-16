@@ -1,0 +1,7 @@
+<div nz-col [nzSpan]="6" *ngIf="pos">
+  <nz-card nzTitle="{{Productos[pos].Titulo}}">
+    <img class="imgcard" src="{{Productos[pos].imagen}}">
+    <nz-card-meta nzDescription="{{Productos[pos].Descripcion}}"></nz-card-meta>
+    <nz-card-meta nzTitle="{{Productos[pos].Precio}}"> </nz-card-meta>
+  </nz-card>
+</div>

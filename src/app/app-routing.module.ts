@@ -24,6 +24,10 @@ const routes: Routes = [
         path: 'contact',
         loadChildren: () => import('./components/pages/home/contact/contact.module').then(m => m.ContactModule),
       },
+      {
+        path: 'detail/:code',
+        loadChildren: () => import('./components/pages/home/detail/detail.module').then(m => m.DetailModule),
+      },
     ],
   },
 ];
