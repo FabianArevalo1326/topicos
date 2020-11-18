@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import {PruebaService} from '../../../../service/prueba.service';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  selector: 'app-house',
+  templateUrl: './house.component.html',
+  styleUrls: ['./house.component.css']
 })
-export class ProfileComponent implements OnInit {
+export class HouseComponent implements OnInit {
   selectedValue:string;
 
+
   constructor(
-    public prueba1Service:PruebaService
+    public pruebaService:PruebaService,
+    private active: ActivatedRoute
   ) { }
   disabled=false;
   array=[
@@ -185,20 +188,7 @@ export class ProfileComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    this.prueba1Service.prueba='Tipo y color';
+    this.pos= this.active.snapshot.params.code;
   }
-  prueba1(){
-    console.log(this.selectedValue);
-
-  }
-  funcion(i){
-    localStorage.setItem('pos',JSON.stringify(i));
-    this.pos=i;
-
-
-    console.log(this.ProductosHogar[this.pos]);
-
-  }
-
 
 }

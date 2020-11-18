@@ -3,5 +3,11 @@
     <img class="imgcard" src="{{Productos[pos].imagen}}">
     <nz-card-meta nzDescription="{{Productos[pos].Descripcion}}"></nz-card-meta>
     <nz-card-meta nzTitle="{{Productos[pos].Precio}}"> </nz-card-meta>
+    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Color" [(ngModel)]="selectedValue" >
+      <nz-option nzLabel="{{color['nombre']}}" nzValue="{{color['nombre']}}" *ngFor="let color of Productos[pos].color"></nz-option>
+    </nz-select>
   </nz-card>
 </div>
+
+
+

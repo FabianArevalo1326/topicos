@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class PruebaService {
 
   prueba:string;
+  prueba1:string;
 
   constructor() { }
 

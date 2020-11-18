@@ -28,6 +28,10 @@ const routes: Routes = [
         path: 'detail/:code',
         loadChildren: () => import('./components/pages/home/detail/detail.module').then(m => m.DetailModule),
       },
+      {
+        path: 'house/:code',
+        loadChildren: () => import('./components/pages/home/house/house.module').then(m => m.HouseModule),
+      },
     ],
   },
 ];

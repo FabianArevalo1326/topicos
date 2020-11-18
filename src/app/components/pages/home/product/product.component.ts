@@ -47,18 +47,6 @@ export class ProductComponent implements OnInit {
          {
            "nombre":"Azul",
          },
-         {
-           "nombre":"Verde",
-         },
-        {
-           "nombre":"Blanco",
-         },
-         {
-           "nombre":"Negro",
-         },
-        {
-           "nombre":"Naranja",
-         },
       ]
     },
     {
@@ -75,22 +63,13 @@ export class ProductComponent implements OnInit {
           "nombre":"Amarillo Naranja",
         },
         {
-          "nombre":"Azul",
-        },
-        {
-          "nombre":"Verde",
-        },
-        {
-          "nombre":"Blanco",
+          "nombre":"Rojo Ferrari",
         },
         {
           "nombre":"Negro",
         },
         {
           "nombre":"Naranja",
-        },
-        {
-          "nombre":"Magenta",
         },
         {
           "nombre":"Alumnio",
@@ -105,31 +84,16 @@ export class ProductComponent implements OnInit {
       "Precio":"$155.000",
       "color":[
         {
-          "nombre":"Amarillo Naranja",
-        },
-        {
-          "nombre":"Azul",
-        },
-        {
           "nombre":"Verde",
         },
         {
-          "nombre":"Blanco",
-        },
-        {
-          "nombre":"Negro",
-        },
-        {
-          "nombre":"Naranja",
+          "nombre":"Naranja Rojizo",
         },
         {
           "nombre":"Magenta",
         },
         {
-          "nombre":"Alumnio",
-        },
-        {
-          "nombre":"Amarillo Verdoso",
+          "nombre":"Alumnio Grueso",
         },
       ]
 
@@ -139,7 +103,7 @@ export class ProductComponent implements OnInit {
       "Titulo":"Base Anticorrosiva para Metal",
       "imagen":"assets/img/Productos/4.jpg",
       "Descripcion":"El Poliuretano IXELL es un sistema de dos componentes fabricado a base de resinas poliuretano; Adicionalmente endurecedor de isocianato, Endurecedor X-20.",
-      "Precio":"95000"
+      "Precio":"$95000"
 
     },
     {
@@ -181,7 +145,33 @@ export class ProductComponent implements OnInit {
       "Titulo":"Laca Philaac",
       "imagen":"assets/img/Productos/6.jpg",
       "Descripcion":"Lacas nitrocelulosicas automotrices y para superficies metalicas, de madera o plasticas, econ6micas, para acabados brillantes. Para los colores disponibles dirijase a la carta de aplicaciones.",
-      "Precio":"44000"
+      "Precio":"$44000",
+      "color":[
+    {
+      "nombre":"Goltonner",
+    },
+    {
+      "nombre":"Rojo tolouidine",
+    },
+    {
+      "nombre":"Azul Entonador",
+    },
+    {
+      "nombre":"Verde  Entonador",
+    },
+    {
+      "nombre":"Blanco 21",
+    },
+    {
+      "nombre":"Negro Mate",
+    },
+    {
+      "nombre":"Negro Brillante",
+    },
+    {
+      "nombre":"Negro Semi-Mate",
+    },
+  ]
 
     },
     {
@@ -189,14 +179,30 @@ export class ProductComponent implements OnInit {
       "Titulo":"Cinta de Enmascarar Scotch 3M",
       "imagen":"assets/img/Productos/7.jpg",
       "Descripcion":"Excelente adaptación a curvas, Indicada para pintura base agua o disolvente Apenas deja borde de pintura, Apenas deja borde de pintura,Resiste ciclos de hasta 100ºC de temperatura.",
-      "Precio":"10000"
+      "Precio":"$10000",
+      "color":[
+        {
+          "nombre":"Verde Clara",
+        },
+        {
+          "nombre":"Blanco Hueso",
+        },
+      ]
     },
     {
       "id":8,
       "Titulo":"Caralz P120 Pulidor",
       "imagen":"assets/img/Productos/8.jpg",
       "Descripcion":"Producto de uso profesional, se recomienda para el pulido rápido de cualquier tipo de pintura, con un alto poder de corte en los recubrimientos de alto rendimiento.",
-      "Precio":"16000"
+      "Precio":"$16000",
+      "color":[
+        {
+          "nombre":"Verde cristal",
+        },
+        {
+          "nombre":"Morado azuloso",
+        },
+      ]
 
     },
 
@@ -216,6 +222,9 @@ export class ProductComponent implements OnInit {
     funcion(i){
     localStorage.setItem('pos',JSON.stringify(i));
     this.pos=i;
+
+
+    console.log(this.Productos[this.pos]);
 
   }
 
