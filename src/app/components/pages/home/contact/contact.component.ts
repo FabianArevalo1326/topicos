@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {person} from '../models/person';
+import {PruebaService} from '../../../../service/prueba.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  pruebaPerson:person = {
+    nombre:null,
+    apellido:null,
+    telefono:null,
+
+
+  }
+
+  constructor(
+    private router:Router
+
+  ) { }
 
   ngOnInit(): void {
+
+  }
+  enviar(){
+    this.pruebaPerson=this.pruebaPerson;
+    console.log(this.pruebaPerson);
+    localStorage.setItem('prueba',JSON.stringify(this.pruebaPerson));
   }
 
 }

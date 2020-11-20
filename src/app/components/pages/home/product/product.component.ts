@@ -210,7 +210,7 @@ export class ProductComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-    this.pruebaService.prueba='Tipo de color';
+    this.pruebaService.prueba='Color';
 
 
   }
