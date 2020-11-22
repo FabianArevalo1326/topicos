@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile.component';
 import { ProfilePageRoutingModule } from './profile-routing.module';
 import {LayoutModule} from '../../../shared/layout/layout.module';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -16,6 +17,7 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
     ProfilePageRoutingModule,
     LayoutModule,
     NgZorroAntdModule,
+    NgxPaginationModule,
 
   ],
   declarations: [ProfileComponent],

@@ -3,7 +3,7 @@
   <div style="background: #ECECEC;padding:38px;">
     <div nz-row [nzAlign]="6">
 
-      <div nz-col [nzSpan]="6" *ngFor="let item of Productos;let i=index" >
+      <div nz-col [nzSpan]="6" *ngFor="let item of Productos ;let i=index" >
         <nz-card nzTitle="{{item.Titulo}}">
           <img class="imgcard" src="{{item.imagen}}" routerLink="/detail/{{i}}" (click)="funcion(i)" >
           <nz-card-meta nzDescription="{{item.Descripcion}}" routerLink="/detail/{{i}}" (click)="funcion(i)"></nz-card-meta>

@@ -183,6 +183,7 @@ export class ProfileComponent implements OnInit {
     },
 
   ];
+  p:number=1;
 
   ngOnInit(): void {
     this.prueba1Service.prueba='Tipo y color';

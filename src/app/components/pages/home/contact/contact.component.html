@@ -1,28 +1,28 @@
 <app-header></app-header>
 <div class="inner-content">
     <div style="background: #ECECEC;padding:38px;"> </div>
-      <img class="logo" src="assets/img/logo1.jpg">
-      <h1 class="Title">Formulario</h1>
+  <div align="center"><img class="logo" src="assets/img/logo1.jpg"></div>
+  <div align="center"> <h1 class="Title">Contactanos</h1></div>
       <form nz-form #Person="ngForm">
-          <nz-form-item>
-            <nz-form-label>Nombre</nz-form-label>
-              <div [class.error]="(nombre.invalid && nombre.touched) && nombre.errors.required">
-                <input  type="text" nz-input placeholder="Nombre" [(ngModel)]="pruebaPerson.nombre" #nombre="ngModel" name="nombre" maxlength="20" required/>
-              </div>
-          </nz-form-item>
-          <nz-form-item>
-            <nz-form-label>Apellido</nz-form-label>
-              <div [class.error]="(apellido.invalid && apellido.touched) && apellido.errors.required">
-                <input type="text" nz-input placeholder="Apellido" [(ngModel)]="pruebaPerson.apellido" #apellido="ngModel" name="apellido" maxlength="20" required/>
-              </div>
-          </nz-form-item>
-          <nz-form-item>
-            <nz-form-label>Telefono</nz-form-label>
-              <div [class.error]="(telefono.invalid && telefono.touched) && telefono.errors.required">
-                <input type="number" nz-input placeholder="Telefono" [(ngModel)]="pruebaPerson.telefono" #telefono="ngModel" name="telefono"required/>
-              </div>
-        </nz-form-item >
-        <button (click)="enviar()"  [disabled]="!Person.form.valid" [class.Active]="Person.form.valid"[class.Disabled]="!Person.form.valid" >Enviar</button>
+              <nz-form-item>
+                  <nz-form-label >Nombre</nz-form-label>
+                    <div [class.error]="(nombre.invalid && nombre.touched) && nombre.errors.required">
+                      <input  type="text" nz-input placeholder="Nombre" [(ngModel)]="pruebaPerson.nombre" #nombre="ngModel" name="nombre" maxlength="20" required/>
+                    </div>
+              </nz-form-item>
+              <nz-form-item>
+                <nz-form-label>Apellido</nz-form-label>
+                  <div [class.error]="(apellido.invalid && apellido.touched) && apellido.errors.required">
+                    <input type="text" nz-input placeholder="Apellido" [(ngModel)]="pruebaPerson.apellido" #apellido="ngModel" name="apellido" maxlength="20" required/>
+                  </div>
+              </nz-form-item>
+              <nz-form-item>
+                <nz-form-label>Telefono</nz-form-label>
+                  <div [class.error]="(telefono.invalid && telefono.touched) && telefono.errors.required">
+                    <input type="number" nz-input placeholder="Telefono" [(ngModel)]="pruebaPerson.telefono" #telefono="ngModel" name="telefono"required/>
+                  </div>
+            </nz-form-item >
+            <button (click)="enviar()"  [disabled]="!Person.form.valid" [class.Active]="Person.form.valid"[class.Disabled]="!Person.form.valid" >Enviar</button>
       </form>
   </div>
 

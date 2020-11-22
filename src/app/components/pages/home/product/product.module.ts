@@ -17,6 +17,7 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
     LayoutModule,
     NgZorroAntdModule,
 
+
   ],
   declarations: [ProductComponent],
   exports: []
