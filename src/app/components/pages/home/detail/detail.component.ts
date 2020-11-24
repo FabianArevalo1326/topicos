@@ -5,7 +5,7 @@ import {ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.css']
+  styleUrls: ['./detail.component.sass']
 })
 
 export class DetailComponent implements OnInit {
@@ -35,7 +35,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Poliuretano Single Stage S600",
       "imagen":"assets/img/Productos/1.jpg",
       "Descripcion":"Los entonadores de la serie 600 de Automotriz Pintuco son Poliuretanos en 2 componentes,formulados especialmente para obtener un producto de alta calidad.",
-      "Precio":"$250.000",
+      "Precio":"250.000",
       "color":[
         {
           "nombre":"Amarillo Verdoso",
@@ -68,7 +68,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Poliuretano Caralz 1060",
       "imagen":"assets/img/Productos/2.jpg",
       "Descripcion":"Poliuretano 1060 para sistema con alta resistencia a los arañazos.Alto contenido de sólidos;muy resistente a los arañazos; destacada resistencia.",
-      "Precio":"$180.000",
+      "Precio":"180.000",
       "color":[
         {
           "nombre":"Amarillo Rojizo",
@@ -104,7 +104,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Poliuretano Ixell 990",
       "imagen":"assets/img/Productos/3.jpg",
       "Descripcion":"El Ixell Poliuretano de la serie 990 es un producto dos componentes de secado rápido con excelentes propiedades de adherencia, fácil lijado, medio contenido de sólidos.",
-      "Precio":"$155.000",
+      "Precio":"155.000",
       "color":[
         {
           "nombre":"Amarillo Naranja",
@@ -141,7 +141,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Base Anticorrosiva para Metal",
       "imagen":"assets/img/Productos/4.jpg",
       "Descripcion":"El Poliuretano IXELL es un sistema de dos componentes fabricado a base de resinas poliuretano; Adicionalmente endurecedor de isocianato, Endurecedor X-20.",
-      "Precio":"95000"
+      "Precio":"95.000"
 
     },
     {
@@ -150,7 +150,7 @@ export class DetailComponent implements OnInit {
       "imagen":"assets/img/Productos/5.jpg",
       "Descripcion":"Glasurit Serie22 y Serie 22 VOC - EL SISTEMA DE BASE COLOR DE HS\n" +
         "Una única capa de pintura es realmente todo lo que necesita para obtener resultados de aplicación perfecta utilizando la Serie 22 líneas de alto contenido de sólidos.",
-      "Precio":"$950.000",
+      "Precio":"950.000",
       "color":[
         {
           "nombre":"Amarillo",
@@ -183,7 +183,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Laca Philaac",
       "imagen":"assets/img/Productos/6.jpg",
       "Descripcion":"Lacas nitrocelulosicas automotrices y para superficies metalicas, de madera o plasticas, econ6micas, para acabados brillantes. Para los colores disponibles dirijase a la carta de aplicaciones.",
-      "Precio":"44000"
+      "Precio":"44.000"
 
     },
     {
@@ -191,14 +191,14 @@ export class DetailComponent implements OnInit {
       "Titulo":"Cinta de Enmascarar Scotch 3M",
       "imagen":"assets/img/Productos/7.jpg",
       "Descripcion":"Excelente adaptación a curvas, Indicada para pintura base agua o disolvente Apenas deja borde de pintura, Apenas deja borde de pintura,Resiste ciclos de hasta 100ºC de temperatura.",
-      "Precio":"10000"
+      "Precio":"10.000"
     },
     {
       "id":8,
       "Titulo":"Caralz P120 Pulidor",
       "imagen":"assets/img/Productos/8.jpg",
       "Descripcion":"Producto de uso profesional, se recomienda para el pulido rápido de cualquier tipo de pintura, con un alto poder de corte en los recubrimientos de alto rendimiento.",
-      "Precio":"16000"
+      "Precio":"16.000"
 
     },
 
@@ -210,7 +210,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Sika Transparente 10",
       "imagen":"assets/img/Hogar/1.jpg",
       "Descripcion":"Sika Transparente 10 es inflamable, por lo tanto no se debe fumar cerca, ni exponer el producto al fuego directo.No se debe aplicar bajo sol directo. Proteger de la lluvia 2 a 3 horas después de aplicado.",
-      "Precio":"$80.000",
+      "Precio":"80.000",
       "color":[
         {
           "nombre":"Tipo 1 Transparente",
@@ -222,7 +222,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Viniltex",
       "imagen":"assets/img/Hogar/2.jpg",
       "Descripcion":"La dilución de la pintura se debe hacer de acuerdo al instrumento de aplicación a usar: con brocha o rodillo: se diluye 1 galón con 25% de agua , con pistola convencional: 1 galón con 25% de agua.",
-      "Precio":"$250.000",
+      "Precio":"250.000",
       "color":[
         {
           "nombre":"Tipo 1 Blanco Hueso Cuñete",
@@ -246,7 +246,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Removedor de pintura",
       "imagen":"assets/img/Hogar/3.jpg",
       "Descripcion":"Es un producto con base en disolventes muy activos, que atacan la mayoría de recubrimientos para su remoción total.Diseñado para quitar cualquier capa de pintura en mal estado y adecuar un nuevo sistema de pintura incompatible con el anterior.",
-      "Precio":"$45.000",
+      "Precio":"45.000",
       "color":[
         {
           "nombre":"Transparente",
@@ -262,7 +262,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Vinilo Pintuland Super Lavable",
       "imagen":"assets/img/Hogar/4.jpg",
       "Descripcion":"Producto con certificado de calidad NTC 1335:2015.Vinilo diluible en agua con bajo olor, bajo VOC, para uso interior y exterior.Excelente lavabilidad y durabilidad.Recomendado para fachadas, muros, paredes,lavabilidad para verse como el primer dia.",
-      "Precio":"$260.000",
+      "Precio":"260.000",
       "color":[
         {
           "nombre":"Tipo 1 Blanco Puro",
@@ -287,7 +287,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Vinilo Pintuland Lavable",
       "imagen":"assets/img/Hogar/5.jpg",
       "Descripcion":"Se puede aplicar sobre superficies nuevas como primera mano, antes de aplicar la segunda mano con VINILO LAVABLE TIPO 2 PINTULAND.Vinilo diluible en agua, tipo emulsión para uso interior, recomendado para pintar muros, paredes, superficies de cemento.",
-      "Precio":"$100.000",
+      "Precio":"100.000",
       "color":[
         {
           "nombre":"Tipo 2 Blanco Puro",
@@ -311,7 +311,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Vinilo Philaac",
       "imagen":"assets/img/Hogar/6.jpg",
       "Descripcion":"Vinilo tipo 1 de acabado mate.Por galon",
-      "Precio":"$44000",
+      "Precio":"44.000",
       "color":[
         {
           "nombre":"Tipo 1 Blanco Puro",
@@ -336,7 +336,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Esmalte Sintetico",
       "imagen":"assets/img/Hogar/7.jpg",
       "Descripcion":" Esmalte sintético de gran utilidad en la industria y en el hogar, de secamiento rápido,colores entremezclables, acabado brillante o mate, lavable  y con excelente adherencia.",
-      "Precio":"$60.000",
+      "Precio":"60.000",
       "color":[
         {
           "nombre":"Dorado",
@@ -351,7 +351,7 @@ export class DetailComponent implements OnInit {
       "Titulo":"Barniz Sintetico",
       "imagen":"assets/img/Hogar/8.jpg",
       "Descripcion":"Barniz alquídico de secamiento al aire, acabado transparente brillante y mate, con especial adherencia, nivelación y flexibilidad, con alto rendimiento.",
-      "Precio":"$35.000",
+      "Precio":"35.000",
       "color":[
         {
           "nombre":"Transparente Brillante",
