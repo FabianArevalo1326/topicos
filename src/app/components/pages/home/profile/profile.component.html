@@ -7,7 +7,7 @@
         <nz-card nzTitle="{{item.Titulo}}">
           <img class="imgcard" src="{{item.imagen}}"  routerLink="/house/{{i}}" (click)="funcion(i)" >
           <nz-card-meta nzDescription="{{item.Descripcion}}" routerLink="/house/{{i}}" (click)="funcion(i)"></nz-card-meta>
-          <nz-card-meta nzTitle="Precio: ${{item.Precio}}" ></nz-card-meta>
+          <nz-card-meta nzTitle="Precio:${{item.Precio}}" ></nz-card-meta>
           {{prueba1Service.prueba}}
           <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Color" [(ngModel)]="selectedValue" (ngModelChange)="prueba1()">
             <nz-option nzLabel="{{color.nombre}}" nzValue="{{color.nombre}}" *ngFor="let color of item.color"></nz-option>
